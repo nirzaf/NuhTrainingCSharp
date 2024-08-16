@@ -6,50 +6,18 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // create a calculator 
 
-        // Console.BackgroundColor = ConsoleColor.Yellow;
-        // Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Enter a number: ");
 
-        int age = 7;
+        double x = Convert.ToDouble(Console.ReadLine());
 
-        string name = "Nuh";
+        Console.WriteLine("Enter another number: ");
 
-        bool girl = false;
+        double y = Convert.ToDouble(Console.ReadLine());
 
-        if (girl)
-        {
-            Console.WriteLine($"I am a girl, my name is {name}");
-        }
-        else
-        {
-            Console.WriteLine("I am a boy, my name is " + name);
+        Console.WriteLine(x + y);
 
-            Console.WriteLine($"My age is {age}");
-
-            string[] weapons = new string[3];
-
-
-            weapons[0] = "axe";
-            weapons[1] = "gun";
-            weapons[2] = "Sword";
-            Console.WriteLine($"My weapon is {weapons[2]}");
-            Console.Clear();
-
-            while (true)
-            {
-                Console.WriteLine("Please enter a key");
-                string key = Console.ReadKey().KeyChar.ToString();
-
-                if (key == "x")
-                {
-                    break;
-                }
-
-                Console.WriteLine();
-                Console.WriteLine($"You entered {key}");
-            }
-        }
     }
 
 }
